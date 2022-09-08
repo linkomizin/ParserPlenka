@@ -15,8 +15,9 @@ public class DataToParse
     public void Add()
     {
         Foqusstore foqusstore = new Foqusstore();
+        foqusstore.AddRange();
         Maxilab maxilab = new Maxilab();
-        
+        maxilab.AddRange();
         listSiteToParse.Add(foqusstore);
         listSiteToParse.Add(maxilab);
     }

@@ -34,7 +34,11 @@ public class Parser
         // return someJoke.OuterHtml
 
         return new ParsingPlenka()
-            { NamePlenka = someNamePlenka?.InnerText, Price = somePlenkaPrice?.InnerText.Replace(" ","").Split("&")[0] };
+        {
+            NamePlenka = someNamePlenka?.InnerHtml, Price = somePlenkaPrice?.InnerText
+                .Replace(" ", "")
+                .Split("&")[0] 
+        };
     }
 
 }

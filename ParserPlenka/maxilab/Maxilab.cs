@@ -17,9 +17,9 @@ public class Maxilab:ISitePlenka
         maxilab.FromParse = new FromParse()
         {
             XpathName =
-                "//div[@class='single-product__info']/div[@class='single-product__title']",
+                "//div[@class='single-product__info']/p[@class='single-product__title']",
             XpathPrice =
-                "//div[@class='woocommerce-Price-amount amount']"
+                "//p[@class='single-product__price-new']/span[@class='woocommerce-Price-amount amount']"
         };
         var listPlenkass = new List<Plenka>()
         {
@@ -37,8 +37,8 @@ public class Maxilab:ISitePlenka
             },
 
         };
-
-
+        
+        
         maxilab.ListPlenkas.AddRange(listPlenkass);
     }
 }
