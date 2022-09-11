@@ -20,6 +20,7 @@ public class Maxilab:ISitePlenka
                 "//div[@class='single-product__info']/p[@class='single-product__title']",
             XpathPrice =
                 "//p[@class='single-product__price-new']/span[@class='woocommerce-Price-amount amount']"
+            ,XpathOnSale = "//form[@class='cart']/button[@type='submit']"
         };
         var listPlenkass = new List<Plenka>()
         {
@@ -34,6 +35,10 @@ public class Maxilab:ISitePlenka
             new Plenka()
             {
                 Addres = "https://maxilabphoto.ru/product/fomapan-100-36/"
+            },
+            new Plenka()
+            {
+                Addres = "https://maxilabphoto.ru/product/kodak-gold-200-24/"
             },
 
         };

@@ -17,4 +17,5 @@ public class FromParse
 {
     public string XpathName { get; set; }
     public string XpathPrice { get; set; }
+    public string XpathOnSale { get; set; }
 }
