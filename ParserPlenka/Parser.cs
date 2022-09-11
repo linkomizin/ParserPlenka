@@ -54,7 +54,10 @@ public class Parser
         {
             return false;
         }
- Console.WriteLine("=>  "+onSalePlenka.InnerHtml.ToString());
+
+        Console.WriteLine("=> "+onSalePlenka.InnerText);
+        
+ 
         return
            
         onSalePlenka.InnerText

@@ -29,41 +29,49 @@ public class Foqusstore:ISitePlenka
         };
         var listPlenkass = new List<Plenka>()
         {
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Fujicolor-C200-200-36-35mm-p40016296"
+            // },
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Kodak-Gold-200-35mm-p57124193"
+            // },
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Kodak-ColorPlus-200-36-35mm-p44577778"
+            // },
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Kodak-Portra-400-35mm-p37286174"
+            // },
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Ilford-HP5-400-35mm-FOQUS-p35273314"
+            // },
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Fomapan-400-35mm-p40016292"
+            // },
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Ilford-Pan-100-35mm-p44785292"
+            // },
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Ilford-FP4-125-35mm-p37234060"
+            // },
+            // new Plenka()
+            // {
+            //     Addres = "https://foqusstore.com/shop/Ilford-Delta-400-35mm-p44785329"
+            // },
+            new Plenka()
+            {
+                Addres = "https://foqusstore.com/shop/Rollei-Retro-400S-35mm-FOQUS-p45187267"
+            },
             new Plenka()
             {
                 Addres = "https://foqusstore.com/shop/Fujicolor-C200-200-36-35mm-p40016296"
-            },
-            new Plenka()
-            {
-                Addres = "https://foqusstore.com/shop/Kodak-Gold-200-35mm-p57124193"
-            },
-            new Plenka()
-            {
-                Addres = "https://foqusstore.com/shop/Kodak-ColorPlus-200-36-35mm-p44577778"
-            },
-            new Plenka()
-            {
-                Addres = "https://foqusstore.com/shop/Kodak-Portra-400-35mm-p37286174"
-            },
-            new Plenka()
-            {
-                Addres = "https://foqusstore.com/shop/Ilford-HP5-400-35mm-FOQUS-p35273314"
-            },
-            new Plenka()
-            {
-                Addres = "https://foqusstore.com/shop/Fomapan-400-35mm-p40016292"
-            },
-            new Plenka()
-            {
-                Addres = "https://foqusstore.com/shop/Ilford-Pan-100-35mm-p44785292"
-            },
-            new Plenka()
-            {
-                Addres = "https://foqusstore.com/shop/Ilford-FP4-125-35mm-p37234060"
-            },
-            new Plenka()
-            {
-                Addres = "https://foqusstore.com/shop/Ilford-Delta-400-35mm-p44785329"
             }
         };
         
