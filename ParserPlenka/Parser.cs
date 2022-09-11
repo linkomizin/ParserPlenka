@@ -1,5 +1,6 @@
 using System.ComponentModel.Design;
 using System.Text;
+using System.Threading.Channels;
 using HtmlAgilityPack;
 using ParserPlenka.Model;
 
@@ -53,9 +54,10 @@ public class Parser
         {
             return false;
         }
-
+ Console.WriteLine("=>  "+onSalePlenka.InnerHtml.ToString());
         return
-            onSalePlenka.InnerText
+           
+        onSalePlenka.InnerText
                 .Contains("корзину")
                 ? true
                 : false;

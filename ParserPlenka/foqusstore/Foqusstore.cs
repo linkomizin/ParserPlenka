@@ -24,7 +24,7 @@ public class Foqusstore:ISitePlenka
                             "form-control--flexible form-control--animated " +
                             "details-product-purchase__add-to-bag " +
                             "form-control__button--icon-center form-control--done']" +
-                            "/button[@class='form-control__button']"
+                            "/button[@class='form-control__button']/span[@class='form-control__button-text']"
 
         };
         var listPlenkass = new List<Plenka>()
