@@ -19,6 +19,13 @@ public class Foqusstore:ISitePlenka
                 "//div[@class='product-details__sidebar']/h1[@class='product-details__product-title ec-header-h3']",
             XpathPrice =
                 "//div[@class='product-details__product-price ec-price-item']/span"
+            , XpathOnSale = "//div[@class='form-control form-control--button" +
+                            " form-control--large form-control--primary " +
+                            "form-control--flexible form-control--animated " +
+                            "details-product-purchase__add-to-bag " +
+                            "form-control__button--icon-center form-control--done']" +
+                            "/button[@class='form-control__button']"
+
         };
         var listPlenkass = new List<Plenka>()
         {

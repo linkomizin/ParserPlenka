@@ -6,28 +6,54 @@ using ParserPlenka.foqusstore;
 using ParserPlenka.maxilab;
 
 Console.WriteLine("Hello, Parse!");
-Foqusstore foqusstore = new Foqusstore();
-foqusstore.AddRange();
-//Parser parser = new Parser(foqusstore.Site);
+
 
 DataToParse dataToParse = new DataToParse();
 dataToParse.Add();
 
-var maxilabList = dataToParse.ListSite[1];
+var sitePlenkaFoqus = dataToParse.ListSite[0];
+var sitePlenkaMaxilab = dataToParse.ListSite[1];
+
 Parser parser;
-if (maxilabList is Maxilab maxilab)
+Focusstore(sitePlenkaFoqus);
+Maxilab(sitePlenkaMaxilab);
+
+void Focusstore(ISitePlenka foqusstore)
 {
-    parser = new Parser(maxilab.Site);
-    foreach (var plenka in maxilab.Site.ListPlenkas)
+    if (foqusstore is Foqusstore focusStore)
     {
-        var result = parser.GetResult(plenka);
-        Console.WriteLine(result.ToString());
+        Parser parser = new Parser(foqusstore.Site);
+
+        foreach (var plenka in focusStore.Site.ListPlenkas)
+        {
+            Thread.Sleep(3000);
+            try
+            {
+                var result = parser.GetResult(plenka);
+
+                Console.WriteLine(result.ToString());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
     }
 }
-    
 
 
-
+void Maxilab(ISitePlenka sitePlenka)
+{
+    if (sitePlenka is Maxilab maxilab)
+    {
+        parser = new Parser(maxilab.Site);
+        foreach (var plenka in maxilab.Site.ListPlenkas)
+        {
+            var result = parser.GetResult(plenka);
+            Console.WriteLine(result.ToString());
+        }
+    }
+}
 
 
 // foreach (var plenka in foqusstore.Site.ListPlenkas)
@@ -44,6 +70,3 @@ if (maxilabList is Maxilab maxilab)
 //
 //     }
 // }
-  
-  
-  
